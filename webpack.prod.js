@@ -18,6 +18,14 @@ module.exports = merge(common, {
     plugins: [
         new MiniCssExtractPlugin({ filename: "[name].[contentHash].scss" }),
         new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            template: "./src/template.html",
+            minify: {
+                removeAttributeQuotes: true,
+                collapseWhiteSpace: true,
+                removeComments: true,
+            },
+        }),
     ],
     module: {
         rules: [
