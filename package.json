@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/mritunjaysaha/banner-generator#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
