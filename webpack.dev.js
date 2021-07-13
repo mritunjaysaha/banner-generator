@@ -9,7 +9,7 @@ module.exports = merge(common, {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
     },
-    plugins: [new HtmlWebpackPlugin({ template: "./src/template.html" })],
+    plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
     module: {
         rules: [
             {

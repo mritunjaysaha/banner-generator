@@ -5,11 +5,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.html$/,
-                use: ["html-loader"],
-            },
-            {
-                test: /\.(svg|png|jpg|gif)$/,
+                test: /\.(svg|png|jpe?g|gif)$/,
                 use: {
                     loader: "file-loader",
                     options: {
@@ -17,6 +13,11 @@ module.exports = {
                         outputPath: "imgs",
                     },
                 },
+            },
+
+            {
+                test: /\.html$/,
+                use: ["html-loader"],
             },
         ],
     },

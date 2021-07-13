@@ -1,0 +1,64 @@
+.banner {
+    height: $banner-height;
+    width: $banner-width;
+
+    background-color: yellow;
+
+    background-image: url(/src/assets/colored-shapes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    color: $text-white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8rem;
+
+    .banner__h1 {
+        font-size: $fs36;
+        width: 40rem;
+        font-family: $ff-montserrat;
+    }
+
+    .banner__divider__div {
+        height: 0.8rem;
+        width: 12rem;
+        background-color: $banner-divider-color;
+        margin: 2rem 0;
+
+        border-radius: 0.5rem;
+    }
+
+    .banner__details__div {
+        width: 50rem;
+        line-height: 3.2rem;
+        font-family: $ff-catamaran;
+
+        .banner__h2 {
+            font-size: $fs28;
+        }
+
+        .banner__h3 {
+            font-size: $fs24;
+        }
+
+        .banner__p {
+            font-size: $fs18;
+        }
+
+        .banner__p {
+            margin-top: 1rem;
+            span {
+                background-color: #037b0b;
+                padding: 0.5rem 2rem;
+                margin-right: 1rem;
+                border-radius: 2rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
