@@ -12,7 +12,6 @@ class Pills {
         const fragment = document.createDocumentFragment();
 
         this.data.map((datum) => {
-            console.log({ datum });
             const spanEl = document.createElement("span");
             spanEl.innerHTML = datum;
             fragment.appendChild(spanEl);
@@ -55,10 +54,11 @@ class Download {
 
         this.btn.addEventListener("click", function () {
             console.log("clicked");
+            console.log(this.container);
             htmlToImage
                 .toPng(document.getElementById("banner"))
                 .then(function (dataUrl) {
-                    saveAs(dataUrl, "my-node.png");
+                    saveAs(dataUrl, `${new Date()}.png`);
                 });
         });
     }
