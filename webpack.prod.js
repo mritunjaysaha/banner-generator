@@ -17,7 +17,7 @@ module.exports = merge(common, {
         minimizer: [new OptimizeCssAssetsPlugin(), new TerserPlugin()],
     },
     plugins: [
-        new MiniCssExtractPlugin({ filename: "[name].[contentHash].scss" }),
+        new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: "./src/index.html",
