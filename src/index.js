@@ -64,5 +64,5 @@ class Download {
     }
 }
 
-new Pills("#description", ["MongoDB", "Express.js", "React.js", "Node.js"]);
+new Pills("#description", ["MongoDB", "Express.js", "Node.js"]);
 new Download("#download-btn", "#banner");
